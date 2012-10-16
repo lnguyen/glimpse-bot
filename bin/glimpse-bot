@@ -1,5 +1,6 @@
 #!/usr/bin/env ruby
 
 require 'daemons'
+require 'glimpse/bot'
 
 Daemons.run('./lib/glimpse/bot/bot.rb')
