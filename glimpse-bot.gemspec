@@ -18,10 +18,11 @@ Gem::Specification.new do |spec|
 
   spec.add_dependency 'cinch'
   spec.add_dependency 'daemons'
+  spec.add_dependency 'ey_api_hmac', '>= 0.4.4'
 
   spec.add_development_dependency 'rake'
 
   spec.require_path = 'lib'
   spec.executables  = ['glimpse-bot']
-  spec.files        = Dir.glob('{bin,lib}/**/*') + %w(README.md History.md)
+  spec.files        = Dir.glob('{config,bin,lib}/**/*') + %w(README.md History.md)
 end

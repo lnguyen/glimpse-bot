@@ -3,4 +3,7 @@
 require 'daemons'
 require 'glimpse/bot'
 
+
+
 Daemons.run('./lib/glimpse/bot/bot.rb')
+
