@@ -10,8 +10,6 @@ module Glimpse
       @id = options[:id]
       @url = options[:url]
       @auth = options[:auth]
-
-      puts options
     end
 
     def query(endpoint)

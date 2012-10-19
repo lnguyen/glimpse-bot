@@ -3,13 +3,13 @@ module Glimpse
 
     def application_name
       return @application_name if @application_name
-      @application_name = self.name.split("::")[1]
+      @application_name = self.class.to_s.split("::")[1].downcase
       @application_name
     end
 
     def connection
       return @connection if @connection
-      @connection = Connection.new({:application => application_name}.merge(application_config[application_name.downcase]))
+      @connection = Connection.new({:application => application_name}.merge(application_config[application_name]))
       @connection
     end
 
